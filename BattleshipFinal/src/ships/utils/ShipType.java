@@ -31,7 +31,7 @@ public enum ShipType {
         for (ShipType type: ShipType.values()) sum += type.numShips;
         return sum;
     }
-    public static String NameShip(ShipType type){
+    public static String toNameShip(ShipType type){
         return switch (type) {
             case BATTLESHIP -> "Battleship";
             case DESTROYER -> "Destroyer";
